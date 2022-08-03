@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .headingStyle{
     background-color: purple;
     color: #fff;
@@ -6,4 +11,26 @@
 }
 .largeText{
     font-size: 3rem;
+}
+
+.card{
+    background-color: #ffda77;
+    width: 390px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 2px 4px 4px #333;
+    border-radius: 5px;
+    display: inline-block;
+}
+.cardTitle{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.cardDesc{
+    text-align: justify;
+    margin-bottom: 5px;
+}
+.cardFooter{
+    text-align: center;
+    font-weight: bold;
 }
