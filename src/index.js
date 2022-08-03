@@ -1,17 +1,34 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+// index.css import
+// import './index.css'
 
+const title = "Welcome";
+const subtitle = "To my-app";
+const desc = "Wo es du sanftes ja du gar ort lange. Im friedlich komm wie sanftes mal, hast der du ergötzt helle." ;
+const date = new Date();
+const dateName = date.getDate();
+const monthName = date.getMonth();
+const yearName = date.getFullYear();
+// Internal CSS
+// const headingStyle={
+//   backgroundColor:"purple",
+//   color:"red",
+//   textAlign:"center",
+//   padding:"15px"
+// };
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+  <div>
+    <h1 className='headingStyle largeText'>{title}</h1>
+    <h2>{subtitle}</h2>
+    <p>{desc}</p>
+    <p>{dateName+"/"+monthName+"/"+yearName}</p>
+  </div>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+);
+  
+
+
+
