@@ -1,19 +1,26 @@
 import React from 'react';
-
 import Card  from './components/Card';
+import Data from './data.json';
 function App(){
+
+  // let items = []
+  /**
+   * for loop
+   */
+  // for(let x= 0; x < Data.length; x++){
+  //   items.push(<Card textTitle={Data[x].Name} desig={Data[x].Designation} descText={Data[x].desc}/>);
+  // }
+  /**
+   * map
+   */
+  // items =Data.map((item)=> <Card textTitle ={item.Name}desig={item.Designation} descText={item.desc}/>)
+
+
     return  <div>
     <h1 className='headingStyle largeText'>To Do App</h1>
-    <Card textTitle="Call Mother" descText="Call Descriptions.1"/>
-    <Card textTitle="Call Father" descText="Call Descriptions.2"/>
-    <Card textTitle="Call Brother " descText="Call Descriptions.3"/>
-    <Card textTitle="Call Sister" descText="Call Descriptions.4"/>
-    <Card textTitle="Call Daughter" descText="Call Descriptions.5"/>
-    <Card textTitle="Call Son" descText="Call Descriptions.6"/>
-    
-    
-    
-  </div>
+    {/* {items} */}
+    {Data.map((item,index)=> <Card key={index} textTitle ={item.Name}desig={item.Designation} descText={item.desc}/>)}
+      </div>
 
 }
 export default App;
