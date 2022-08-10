@@ -1,7 +1,9 @@
 import React from 'react';
-import Card  from './components/Card';
-import Data from './data.json';
-import List from './components/uniqueList/List';
+// import Card  from './components/Card';
+// import Data from './data.json';
+// import List from './components/uniqueList/List';
+import Card1 from './components/Card1';
+import Card2 from './components/Card2';
 function App(){
 
   // let items = []
@@ -16,18 +18,18 @@ function App(){
    */
   // items =Data.map((item)=> <Card textTitle ={item.Name}desig={item.Designation} descText={item.desc}/>)
 
-  const users =[
-    {
-      FullName:"Abdullah Al Mamun",
-      Age:32,
-      phones : [{Home:"0178956221",Office:"01789458231"}]
-    },
-    {
-      FullName:"Abdullah Al Hasan",
-      Age:32,
-      phones : [{Home:"0176221",Office:"01789451"}]
-    }
-  ]
+  // const users =[
+  //   {
+  //     FullName:"Abdullah Al Mamun",
+  //     Age:32,
+  //     phones : [{Home:"0178956221",Office:"01789458231"}]
+  //   },
+  //   {
+  //     FullName:"Abdullah Al Hasan",
+  //     Age:32,
+  //     phones : [{Home:"0176221",Office:"01789451"}]
+  //   }
+  // ]
 
 
     return  <div>
@@ -36,7 +38,7 @@ function App(){
     {/* {Data.map((item,index)=> <Card key={index} textTitle ={item.Name}desig={item.Designation} descText={item.desc}/>)} */} 
       
       {/* <List /> */}
-      <h1>Nasted Lists</h1>
+      {/* <h1>Nasted Lists</h1>
       {users.map((user,index)=> (<article key={index}>
         <h3>Full Name:{user.FullName}</h3>
         <p>Age:{user.Age}</p>
@@ -44,7 +46,9 @@ function App(){
           <p>Home:{phone.Home}</p>
           <p>Office:{phone.Office}</p>
         </div>))}
-      </article>))}
+      </article>))} */}
+      <Card1 name="Abdullah Al Mamun" desc="This is abdullah al mamun." />
+      <Card2 name="Card2"/>
       </div>
 
 }
