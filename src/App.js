@@ -4,6 +4,7 @@ import React from 'react';
 // import List from './components/uniqueList/List';
 import Card1 from './components/Card1';
 import Card2 from './components/Card2';
+import ReactBootstrap from './components/react_Bootstrap/ReactBootstrap';
 function App(){
 
   // let items = []
@@ -47,8 +48,9 @@ function App(){
           <p>Office:{phone.Office}</p>
         </div>))}
       </article>))} */}
-      <Card1 name="Abdullah Al Mamun" desc="This is abdullah al mamun." />
-      <Card2 name="Card2"/>
+      {/* <Card1 name="Abdullah Al Mamun" desc="This is abdullah al mamun." />
+      <Card2 name="Card2"/> */}
+      <ReactBootstrap />
       </div>
 
 }
