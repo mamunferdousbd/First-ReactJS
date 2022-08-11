@@ -1,0 +1,29 @@
+body{
+    background: rgb(78,75,75) !important;
+    color: #fff !important;
+    
+}
+
+.btn1{
+    display:inline-block;
+    padding:10px 25px;
+    background-color: purple;
+    margin-right: 20px;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.btn2{
+    background-color: purple;
+    padding: 10px 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    
+
+}

@@ -2,9 +2,10 @@ import React from 'react';
 // import Card  from './components/Card';
 // import Data from './data.json';
 // import List from './components/uniqueList/List';
-import Card1 from './components/Card1';
-import Card2 from './components/Card2';
-import ReactBootstrap from './components/react_Bootstrap/ReactBootstrap';
+// import Card1 from './components/Card1';
+// import Card2 from './components/Card2';
+// import ReactBootstrap from './components/react_Bootstrap/ReactBootstrap';
+import State from './components/State';
 function App(){
 
   // let items = []
@@ -50,7 +51,8 @@ function App(){
       </article>))} */}
       {/* <Card1 name="Abdullah Al Mamun" desc="This is abdullah al mamun." />
       <Card2 name="Card2"/> */}
-      <ReactBootstrap />
+      {/* <ReactBootstrap /> */}
+      <State />
       </div>
 
 }
